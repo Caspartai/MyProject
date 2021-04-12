@@ -1,0 +1,29 @@
+body {
+   /*  position: relative; */
+}
+
+
+#headClock{
+    height: 70vh;
+}
+
+@media only screen and (max-width: 825px)  {
+    
+    #headClock{
+        height: 90vh;
+    }
+}
+
+
+.animate_repeat{
+    animation-iteration-count: 1000;
+}
+
+
+#Tools a{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate CSS only -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- FontAwesome CSS only -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"
+    rel="stylesheet"
+  />
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+  ></script>
+    <!-- My own custom CSS only -->
+    <link rel="stylesheet" href="./css/style.css">
+
+      <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <!-- Weather CSS -->
+  <link href="css/styleWeather.css" rel="stylesheet">
+
+
+  
+    <title>Day is always going on!</title>
+</head>
+
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Today</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#headClock">Time</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Weather">Weather</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Tools" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#Mtr">MTR</a></li>
+                  <li><a class="dropdown-item" href="#Map">MAP</a></li>
+                  <li><a class="dropdown-item" href="#Foods">Foods</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="sign.html">Sign In</a>
+                </li>
+              </li>
+            </ul>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="container-fluid" style="margin: 0;padding: 0;">
+        <header class="bg-primary text-white" id="headClock">
+            <iframe src="clock.html" width="100%" height="100%" frameborder="0" alt="clock">
+             
+                </iframe>   
+        <!--   <div class="container-fluid text-center">
+          </div> -->
+        </header>
+    </div>
+  
+  
+    <section id="Weather">
+      <div class="container-fluid" style="margin: 0;padding: 0;">
+     <!--    <iframe src="https://www.accuweather.com/en/hk/hong-kong/1123655/weather-forecast/1123655" width="100%" height="60" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+-->
+
+        <div class="row">
+          <div class="col-lg-3 mx-auto">
+            <div class="container container_w">
+              <div class="app-title">
+                <p>Weather</p>
+            </div>
+            <div class="notification"> </div>
+            <div class="weather-container" id="weather-icon1">
+                <div class="weather-icon" >
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div class="container container_w">
+              <div class="app-title">
+                <p>Weather</p>
+            </div>
+            <div class="notification"> </div>
+            <div class="weather-container" id="weather2" >
+                <div class="weather-icon" id="weatheri-icon2" >
+                    <img src="./icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div class="container container_w">
+              <div class="app-title">
+                <p>Weather</p>
+            </div>
+            <div class="notification"> </div>
+            <div class="weather-container" id="weather3">
+                <div class="weather-icon"  id="weatheri-icon2">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div> 
+  
+      </div>
+    </section>
+  
+
+    <div class="container-fluid" id="Tools">
+        <h3 class="text-center animate__animated animate__jackInTheBox" style="color: #f05f40;">Useful Tools</h3>
+        <hr style="margin: 20px 0;">
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6" id="Mtr">
+            <a href="http://www.mtr.com.hk/en/customer/jp/index.php?oLabel=Hong%20Kong&oType=HRStation&oValue=44&dLabel=Kowloon&dType=HRStation&dValue=45" alt="mtr" target="_blank">
+            <i class="fas fa-subway fa-3x animate__animated animate__bounceIn" style="color: #f05f40;margin-bottom:10%;margin-top:5%;"></i>
+            <h5>MTR</h5>
+            <p class="text-muted">I want to check the fare.</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" id="Map">
+            <a href="http://map.google.com" alt="map" target="_blank"><i class="fas fa-globe-americas fa-3x animate__animated animate__bounceIn  animate__delay-1s" style="color: #f05f40;margin-bottom:10%;margin-top:5%;"></i>
+                <h5 >Map</h5>
+                <p class="text-muted ">I need to search the route.</p>
+                </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" id="Foods">
+            <a href="https://www.openrice.com/en/hongkong" alt="foods" target="_blank">
+            <i class="fas fa-utensils fa-3x animate__animated animate__bounceIn animate__delay-2s" style="color: #f05f40;margin-bottom:10%;margin-top:5%;"></i>   
+            <h5>Foods</h5>
+            <p class="text-muted">What will I eat today.</p>
+            </a>
+          </div>
+        <!--   <div class="col-lg-3 col-md-6 col-sm-12">
+            <i class="fas fa-heart fa-3x animate__animated animate__bounceIn animate__delay-3s" style="color: #f05f40;margin-bottom:10%;margin-top:5%;"></i>
+            <h5>Made with Love</h5>
+            <p class="text-muted">Because nothing says hard work and talent like editing a few lines of text.</p>
+          </div> -->
+        </div>
+      </div>
+
+      <div></div>
+
+  
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy;My Website 2021</p>
+        <div style="display: flex; justify-content: center;margin-top: 20px;">
+            <a href="mailto:myself"><i class="far fa-envelope fs-3 animate__animated animate__heartBeat animate_repeat" style="float:left;" id="icon-one"></i><p class="m-0 text-center" style="font-size: large;width: 150px;" >Take a note</p></a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    
+    
+    
+    <!--   Bootstrap JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   <!--  fontawesome JavaScript -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- ajax JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
