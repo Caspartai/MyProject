@@ -1,0 +1,254 @@
+
+<link rel="stylesheet" href="/profilesetup.css">
+
+    <div class="navbar_container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light top_navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" >LoveBetter</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+         <a class="nav-link" href="/login">Log In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    </div>
+
+  <div class="container">
+     
+    <div class="top-info">
+       <div class="title">Setup your profile</div>
+       <div class="profile-pic-div">
+        <img scr="#" id="photo">
+        <input type="file" id="picFile" name="upload" accept="image/*" form="myform" required/>
+        <label for="picFile" id="uploadBtn">
+          {{!-- <img src="https://img.icons8.com/material-outlined/28/000000/camera--v2.png"/> --}}
+         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="32" height="32"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g transform="translate(25.8,25.8) scale(0.7,0.7)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.18718,14.31934l-30.40235,0.02799c-4.00617,0 -7.83787,1.68047 -10.55404,4.63314l-8.88835,9.6862h-22.67578c-7.88333,0 -14.33333,6.45 -14.33333,14.33333v86c0,7.88333 6.45,14.33333 14.33333,14.33333h114.66667c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333h-22.63379l-8.94434,-9.71419c-2.71617,-2.95267 -6.5547,-4.63314 -10.56803,-4.63314zM86,50.16667c20.06667,0 35.83333,15.76667 35.83333,35.83333c0,20.06667 -15.76667,35.83333 -35.83333,35.83333c-20.06667,0 -35.83333,-15.76667 -35.83333,-35.83333c0,-20.06667 15.76667,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z"></path></g><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path></g></g></svg>
+        </label>
+        </div>
+    </div>
+   
+
+    <div class="content">
+
+ <form action="/setup" method="POST" id="myform" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <label for="gender">Gender</label>
+              <select name="gender" id="gender" required>
+                <option value="" class="select">-Select-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+          </div>
+
+          <div class="input-box">
+             <div class="row" style="display: flex;">
+                <div style="width:60%">
+                  <label for="birthday">Birthday</label>
+                </div>
+
+                  <div  style="width: 40%;">
+                  <p id="now_age"></p>
+                </div>
+            </div>
+              <input type="date" id="start" name="birthday" max="" required>
+          </div>
+
+            <div class="input-box">
+              <label for="height">Height</label>
+              <select name="height" id="height" required>
+              <option value="" class="select">-Select-</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label for="education">Education</label>
+              <select name="education" id="education" required>
+              <option value="" class="select">-Select-</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label for="ethnicity">Ethnicity</label>
+              <select name="ethnicity" id="ethnicity" required>
+            <option value="" class="select">-Select-</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label for="religion">Religion</label>
+              <select name="religion" id="religion" required>
+           <option value="" class="select">-Select-</option>
+              </select>
+            </div>
+
+            <div class="input-box" id="input_work">
+              <span class="details">Job Title</span>
+              <input type="text" name="work" placeholder="Enter your job tilte" required>
+            </div>
+
+            <div class="input-box" id="input_hometown">
+              <span class="details">Home Town</span>
+              <input type="text" name="hometown" placeholder="Enter your location" required>
+            </div>
+
+            <div class="input-box" id="input_location">
+              <input type="text" name="location" id="location" style="display: none"required >
+            </div>
+
+            <div class="input-box" id="input_aboutme" style="width:100%">
+              <label for="aboutme">About Me</label>
+              <textarea id="aboutme" name="aboutme" style="width:100%" required></textarea>
+            </div>
+          </div>
+
+        <div class="button">
+          <input type="submit" value="Next" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+document.getElementById('start').max = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
+
+// $('#age').append([...Array(100).keys()].map((i,j) => `<option value="${i}">${i}</option >`)) 
+ for(let i =18;i<100;i++){
+    $('#age').append(`<option value="${i}">${i}</option >`)
+  }
+
+  for(let i =122;i<250;i++){
+
+    $('#height').append(`<option value="${i}">${i}</option >`)
+  }
+
+  eduArr = ['Secondary','Associate','Bachelor','Master','Doctor'];
+  for(let i = 0;i<eduArr.length;i++){
+    $('#education').append(`<option value="${i+1}">${eduArr[i]}</option >`)
+  }
+
+  ethArr = ['Asian','Arab','Black/Agrican-descent','Hispanic/Latino','Native American','Pacific Islander','South Asian','White/Caucasian','Other'];
+  for(let i = 0;i<ethArr.length;i++){
+    $('#ethnicity').append(`<option value="${ethArr[i]}">${ethArr[i]}</option >`)
+  }
+
+  relArr = ['Buddhist','Christian','Catholic','Hindu','Jewish','Muslim','Sikh','Shinto','Spiritual but not religious','Neither religious nor spiritual','Other'];
+  for(let i = 0;i<relArr.length;i++){
+    $('#religion').append(`<option value="${relArr[i]}">${relArr[i]}</option >`)
+  }
+
+</script>
+
+<script>
+  const successCallback = (position) => {
+    let coords = {
+      latitude:position.coords.latitude,
+      longitude:position.coords.longitude
+      }
+    document.getElementById('location').value = JSON.stringify(coords)
+  }
+
+  const errorCallback = (error) => {
+    console.error(error);
+  }
+
+  const watchId = navigator.geolocation.getCurrentPosition(successCallback,errorCallback)
+</script>
+
+{{!-- calculate age --}}
+<script>
+  document.getElementById("start").addEventListener("change",()=>{
+
+var birth_date = new Date(document.getElementById("start").value);
+var birth_date_day = birth_date.getDate();
+var birth_date_month = birth_date.getMonth();
+var birth_date_year = birth_date.getFullYear();
+
+var today_date =new Date();
+var today_day = today_date.getDate(); //if getDay is Monday to Sunday
+console.log(today_day)
+var today_month = today_date.getMonth();
+var today_year = today_date.getFullYear();
+
+var calculated_age;
+
+if(today_month > birth_date_month){
+  calculated_age = today_year - birth_date_year;
+}else if(today_month == birth_date_month){
+  if(today_day >= birth_date_day){
+    calculated_age = today_year - birth_date_year;
+  }else{
+    calculated_age = today_year - birth_date_year - 1;
+  }
+}else{
+    calculated_age = today_year - birth_date_year - 1;
+  }
+
+  document.getElementById("now_age").innerHTML = "Age : " + calculated_age ;
+})
+
+</script>
+
+{{!-- add foto in the button --}}
+<script>
+
+    //declearing html elements
+
+    const imgDiv = document.querySelector(".profile-pic-div");
+    const img = document.querySelector("#photo");
+    const file = document.querySelector("#picFile");
+    const uploadBtn = document.querySelector("#uploadBtn");
+
+
+    uploadBtn.style.display = "block";
+    //if user hover on profile div
+
+    imgDiv.addEventListener("mouseenter",function(){
+        uploadBtn.style.display = "block";
+    })
+
+    imgDiv.addEventListener("mouseleave",function(){
+        uploadBtn.style.display = "none";
+    })
+
+    
+    //when we choose a foto to upload
+    file.addEventListener("change",function(){
+        const choosedFile = this.files[0];
+
+        if(choosedFile) {
+            //FileReader is a predefined function of JS
+            const reader = new FileReader();
+
+            reader.addEventListener('load',function(){
+                img.setAttribute("src",reader.result);
+            });
+
+            reader.readAsDataURL(choosedFile);
+        }
+    })
+
+</script>
+
+
+{{!-- test pre set value --}}
+{{!-- <script>
+      $('#gender').append(`<option value="Male" selected>Male</option >`)
+      $('#height').append(`<option value="181" selected>181</option >`)
+      $('#education').append(`<option value="2" selected>Bachelor</option >`)
+      $('#ethnicity').append(`<option value="Asian" selected>Asian</option >`)
+      $('#religion').append(`<option value="Other" selected>Other</option >`)
+      $('#input_work input[type=text]').val(`Web Developer`)
+      $('#input_hometown input[type=text]').val(`Hong Kong`)
+      $('#input_aboutme textarea').val(`Welcome to our DatingApp!`)
+</script> --}}
+
+{{!-- if haven't uploaded the profile photo,will alert --}}
