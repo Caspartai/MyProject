@@ -1,0 +1,235 @@
+.friendsHeaderContainer {
+  background-color: #96d9ff;
+  color: white;
+  position: sticky;
+  z-index: 20;
+  top: 0;
+}
+
+.TitleSearchContainer{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.catchUpSearch {
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 3rem !important;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+}
+
+/**************friendSearch *************/
+/* .friendSearch {
+  text-align: center;
+  z-index: 10;
+  text-align: center !important;
+  display: inline-block;
+} */
+
+.friendSearch-input-container {
+  margin-top: 10px !important;
+  background-color: white;
+  border: 2px solid #00a3ff !important ;
+  border-radius: 1rem !important;
+  z-index: 10;
+  width: 14vw !important;
+  text-align: center !important;
+  /* height: 40px; */
+}
+
+.friendSearch__input {
+  border: none !important;
+  font-size: 20px;
+  width: 10vw;
+}
+
+.search-icon {
+  height: 28px;
+} 
+/***************************/
+
+.searchContainer {
+  display: block;
+  position: relative;
+  background-color: white;
+  border: 4px blue solid;
+  border-radius: 2rem;
+  padding: 4px;
+}
+
+
+/***************************/
+
+.FriendsTitle {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0px 0px 0px 20px;
+}
+
+.moreGroups {
+  position: "absolute" !important;
+  right: "0px" !important;
+}
+
+.friendGroupListContainer {
+  display: inline-flex;
+}
+.friendGroupListContainer .btn-group .btn {
+  border: red 3 px solid !important;
+}
+.friendGroupList {
+  margin: 3px;
+  font-size: 20px;
+  background-color: #96d9ff !important;
+  border: none !important;
+  color: white;
+}
+nav .tabs {
+  background-color: aqua;
+}
+
+.nav-link {
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+#navFriends.active {
+  background-color: #96d9ff !important;
+  border: none !important;
+  color: #00a3ff !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+  transition: none !important;
+}
+
+#navFriends.active p {
+  background-color: #96d9ff !important;
+  border: none !important;
+  color: #00a3ff !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+  border-bottom: 4px solid #00a3ff !important;
+  transition: none !important;
+}
+
+
+/* //FriendsAreaComponents */
+
+.friendsAreaComponent {
+  border-radius: 1rem !important;
+  padding: 0px !important;
+  margin: 20px 0px 0px 0px !important;
+  max-width: 20vw;
+}
+
+.friendCardBody {
+  position: relative !important;
+}
+
+.groupMoreButton {
+  font-size: 30px;
+  color: grey !important;
+  text-align: left;
+}
+
+.deleteFriendBtn {
+  position: absolute !important;
+  right: 15px !important;
+  bottom: 10px !important;
+  background-image: url("../img/DeleteFriendIcon.png") !important;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: none !important;
+  background-color: none !important;
+  height: 20px;
+  width: 30px;
+  border: none !important;
+}
+
+.modal-dialog {
+  position: relative !important;
+  pointer-events: none !important;
+  background-color: none !important;
+}
+
+.FriendsContentContainer {
+  background-color: #dfdfdf;
+}
+
+
+
+/* **************Friend top area section*************** */
+.friendAreaTopSection{
+  display: inline-flex;
+  justify-content: center;
+  position: sticky;
+  z-index: 15;
+}
+
+.editGroupButton{
+  background-color: white !important;
+  border: none !important;
+  position:absolute;
+  right: 5px;
+  top: 3px;
+}
+
+.editGroupIcon{
+  height: 4px;
+  background-color: transparent !important;
+  color: transparent;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  box-shadow: none !important;
+}
+
+
+
+/* **************************** */
+
+
+/* .backToTopButtonContainer{
+  color: none !important;
+  border:none !important;
+  outline:none !important;
+  background-color: none !important;
+} */
+
+
+.ScrollToTopButton{
+  position: fixed; 
+  /* margin-left: -110px; */
+  left: 50vw;
+  bottom: 20px;
+  align-items: center;
+  height: 30px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.7;
+  
+}
+
+.ScrollToTopButton:hover{
+  opacity: 0.7
+  ;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

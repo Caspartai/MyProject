@@ -1,0 +1,20 @@
+.post-and-schedule {
+  overflow: hidden !important;
+}
+
+.post-page {
+  overflow: scroll;
+  overflow-x: hidden !important;
+}
+
+.schedule-page {
+  overflow: scroll;
+  overflow-x: hidden !important;
+}
+
+
+.friends-page {
+  overflow: scroll;
+  overflow-x: hidden !important;
+}
+

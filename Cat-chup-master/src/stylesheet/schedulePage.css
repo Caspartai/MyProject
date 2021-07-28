@@ -1,0 +1,72 @@
+/* details section */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  display: none;
+}
+
+#modalScheduleStartTime::-webkit-calendar-picker-indicator,
+#modalScheduleEndTime::-webkit-calendar-picker-indicator {
+  background: url(https://img.icons8.com/material-outlined/100/000000/clock--v2.png);
+  /* background: url(../img/running-clock.gif); */
+  background-size: cover;
+  /* filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%); */
+  display: block;
+}
+
+#modalScheduleStartTime::-webkit-calendar-picker-indicator:hover,
+#modalScheduleEndTime::-webkit-calendar-picker-indicator:hover {
+  background: url(../img/running-clock.gif);
+  background-size: cover;
+}
+
+.scheduleTime-div {
+  display: flex;
+  align-items: center;
+}
+
+#modalScheduleStartTime,
+#modalScheduleEndTime,
+#modalScheduleDate {
+  width: auto;
+}
+
+#modalContent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 20vh;
+}
+
+textarea {
+  resize: none;
+}
+
+.schedule_detail_box {
+  display: inline-block;
+}
+.display-none {
+  display: none;
+}
+.schedule_detail {
+  background-color: white;
+}
+
+/* .schedule_detail > div {
+  position: absolute;
+} */
+
+label#start-label {
+  transform: translate(0, 1.5px) scale(0.75);
+}
+
+label#end-label {
+  transform: translate(0, 1.5px) scale(0.75);
+}
+
+.fc-event-main i {
+  margin-left: 10px;
+}
+
+.fc-daygrid-event i {
+  margin-left: 10px;
+}

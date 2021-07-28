@@ -1,0 +1,38 @@
+/************Notifications left side *****************/
+.body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden !important; /* Hide scrollbars */
+}
+
+.notificationOverflow {
+  overflow: hidden !important;
+}
+.notificationHeaderContainer {
+  background-color: #96d9ff !important;
+  color: white;
+  font-size: 26px;
+  text-align: left;
+  position: sticky;
+  z-index: 10;
+}
+
+.notificationAvatar {
+  height: 40px;
+}
+
+/************Notification Details right side *****************/
+
+.notificationDetailsHeaderContainer {
+  background-color: #96d9ff !important;
+  color: white;
+  font-size: 26px;
+  text-align: left;
+  position: fixed;
+  z-index: 10;
+  width: 30%;
+}
+
+.notificationDetailMainContainer {
+  margin-left: 10px;
+}
