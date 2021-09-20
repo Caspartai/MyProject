@@ -1,50 +1,47 @@
-# Canvas Application :rocket:
+# Canvas
+
+![GitHub Logo](assets/css/canvas-screenshot.gif)
+
+### About Project
+
+This project allows you to create artwork on the browser, by utilising Canvas from HTML and Javascript.
+
+(link to project http://unable-business.surge.sh/)
 
 ### How to run this package
 
-- Double click on index.html
+- Clone the project & open index.html
 
-### How it works :open_book:
+#### Features
 
-In the javascript folder, there are various functionalities for the canvas application (please implement more, here)
+| Pen         | Additional settings |
+| ----------- | ------------------- |
+| Pen         | (colour)            |
+| Brush       | (colour, width)     |
+| Pen         | (colour)            |
+| Spray-paint | (colour)            |
+| Eraser      | N/A                 |
 
-- javascript
-  - mouseMethods.js
-    - This class will be extended by all functionalities - it essentially tracks your variables as well as mouse events
-  - lineFunction.js
-    - State what happens when your user clicks on the mouse, moves the mouse, drags the mouse...
-  - rectFunction.js
-    - State what happens when your user clicks on the mouse, moves the mouse, drags the mouse...
-- css
-  - style.css
+##### Shapes
 
-## Sprint :athletic_shoe:
+| Shapes           | Additional settings      |
+| ---------------- | ------------------------ |
+| rectangle        | (colour)                 |
+| rectangle stroke | (colour, width)          |
+| circle           | (colour)                 |
+| circle stroke    | (colour, width)          |
+| Triangle         | (colour)                 |
+| Triangle stroke  | (colour, width)          |
+| Line             | (colour, width)          |
+| Beizer curve     | (Spacing, width, colour) |
+| Polygon          | (colour, sides)          |
 
-| Done? | Component                               | Priority | Estimated Time | Actual Time |
-| ----- | --------------------------------------- | :------: | :------------: | :---------: |
-|       | Create repository                       |          |   5 minutes    |             |
-|       | Make pull branch mandatory              |          |   5 minutes    |             |
-|       | Practice pulling and pushing with group |          |   5 minutes    |             |
-|       | Read Documentation                      |    M     |                |             |
-|       | Write down a list of requirements       |    M     |                |             |
-|       | Divide up the work                      |    M     |                |             |
-|       | Look over the code                      |    M     |                |             |
-|       | Functionality 1: Circle                 |    M     |                |             |
-|       | Functionality 2: Eraser                 |    M     |                |             |
-|       | Functionality 3: (You choose!)          |    M     |                |             |
-|       | Functionality 4:                        |    M     |                |             |
-|       | Functionality 5:                        |    M     |                |             |
-|       | Functionality 6:                        |    M     |                |             |
+##### Other
 
-- [Further Documentation and Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
-
-## Issues and Resolutions :flashlight:
-
-**ERROR**: :gear:
-**RESOLUTION**: :key:
-
-| Issue                | Where it occurs | Possible solution | Actual solution |
-| -------------------- | :-------------: | :---------------: | :-------------: |
-| Creating a checklist |        H        |       2hrs        |     2.5hrs      |
-
-#### What is one thing that I learned from doing this project? :books:
+| Other      | Additional settings |
+| ---------- | ------------------- |
+| Undo       | N/A                 |
+| Redo       | N/A                 |
+| Bin        | N/A                 |
+| Upload     | N/A                 |
+| Save Image | (save image as PNG) |
