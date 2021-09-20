@@ -29,7 +29,7 @@ const app = express();
 const uploadDirectory = __dirname + path.sep + "uploaded" + path.sep; 
 //function that we utilize for our requests and responses
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(expressFileUpload({limits:{ fileSize: 50 * 1024 * 1024 },
+app.use(expressFileUpload({limits:{ fileSize: 5000 * 1024 * 1024 },
 })
 );
 

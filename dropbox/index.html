@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Document</title>
     <style>
-        body{
-            margin:0;
-            padding:0;
+        body {
+            margin: 0;
+            padding: 0;
             background-color: aliceblue;
-            background-image:url(./Paper.jpeg);
-            display:flex;
+            background-image: url(./Paper.jpeg);
+            display: flex;
             /* opacity: 0.6; */
-            background-repeat:no-repeat;
-            width:100vw;
+            background-repeat: no-repeat;
+            width: 100vw;
             height: 100vh;
         }
 
-        #Box{
-        position:absolute;
-        opacity: 0.8;
-        background-color: whitesmoke;
-        width:100%;
-        height: 100%;
+        #Box {
+            position: absolute;
+            opacity: 0.8;
+            background-color: whitesmoke;
+            width: 100%;
+            height: 100%;
 
         }
-        #cover{
-            position:absolute;     
-            width:100%;
-            height:100%;
+
+        #cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
 
-        #bigBox{
+        #bigBox {
             margin: 0 auto;
-            margin-top:150px;
+            margin-top: 150px;
             padding: 20px 50px;
-            background-color:#00000090;
-            width:400px;
-            height:300px;
-            border-radius:100px;
-            text-align:center;
+            background-color: #00000090;
+            width: 400px;
+            height: 300px;
+            border-radius: 100px;
+            text-align: center;
             /* background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
-            }
-
-        #bigBox h1{
-            color:white;
         }
 
-        .filebutton{
-            margin-top:15px;
-            border-radius:5px;
+        #bigBox h1 {
+            color: white;
+        }
+
+        .filebutton {
+            margin-top: 15px;
+            border-radius: 5px;
             background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
         }
 
-        .inputButton{
+        .inputButton {
             border: 0;
-            width:150px;
+            width: 150px;
             height: 35px;
-            color:white;
-            margin-top:10px;
-            border-radius:20px;
+            color: white;
+            margin-top: 10px;
+            border-radius: 20px;
             background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
         }
-
-        
     </style>
 </head>
+
 <body>
     <div id="Box"></div>
     <div id="cover">
@@ -76,59 +78,71 @@
             <h1>Dropbox application</h1>
             <form method="POST" action="/files" enctype="multipart/form-data" target="_parent">
                 <label class="btn btn-info filebutton">
-                <input type="file" name="dropbox" id="fileUpload" multiple size="50" style="display:none;" onchange="readTheFile()" />
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="32" height="32"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M43,8.0625c-9.675,0 -17.46875,7.79375 -17.46875,17.46875v120.9375c0,9.675 7.79375,17.46875 17.46875,17.46875h64.5c2.28437,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125h-64.5c-5.24063,0 -9.40625,-4.16563 -9.40625,-9.40625v-120.9375c0,-5.24063 4.16562,-9.40625 9.40625,-9.40625h68.53125v9.40625c0,9.675 7.79375,17.46875 17.46875,17.46875h11.28802c2.28438,0 6.18073,0 6.18073,-4.03125c0,-8.19688 -3.22395,-15.99167 -9.00208,-21.90417c-5.9125,-5.77813 -13.7073,-9.00208 -21.90417,-9.00208zM119.59375,16.52917c4.56875,0.80625 8.73438,2.9552 12.09375,6.31458c3.35938,3.35938 5.50833,7.525 6.31458,12.09375h-9.00208c-5.24063,0 -9.40625,-4.16563 -9.40625,-9.40625zM142.4375,53.75c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v34.9375c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-34.9375c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM142.50574,110.20325c-6.88672,-0.0168 -13.77396,2.60509 -19.01459,7.9129c-10.48125,10.48125 -10.48125,27.5453 0,38.02655c10.48125,10.48125 27.5453,10.48125 38.02655,0c10.48125,-10.48125 10.48125,-27.5453 0,-38.02655c-5.24062,-5.24063 -12.12525,-7.89611 -19.01197,-7.9129zM142.4375,119.59375c0.5375,0 1.07448,0.13333 1.4776,0.2677c0.5375,0.26875 0.94063,0.53907 1.34375,0.9422l10.75,10.75c1.6125,1.6125 1.6125,4.16458 0,5.6427c-1.6125,1.6125 -4.16458,1.6125 -5.6427,0l-3.8974,-3.8974v17.20105c0,2.28438 -1.74687,4.03125 -4.03125,4.03125c-2.28438,0 -4.03125,-1.74687 -4.03125,-4.03125v-17.20105l-3.8974,3.8974c-1.6125,1.6125 -4.16458,1.6125 -5.6427,0c-1.6125,-1.6125 -1.6125,-4.16458 0,-5.6427l10.75,-10.75c0.80625,-0.80625 1.74635,-1.2099 2.82135,-1.2099z"></path></g></g></svg>
+                    <input type="file" name="dropbox" id="fileUpload" multiple size="50" style="display:none;"
+                        onchange="readTheFile()" />
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M43,8.0625c-9.675,0 -17.46875,7.79375 -17.46875,17.46875v120.9375c0,9.675 7.79375,17.46875 17.46875,17.46875h64.5c2.28437,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125h-64.5c-5.24063,0 -9.40625,-4.16563 -9.40625,-9.40625v-120.9375c0,-5.24063 4.16562,-9.40625 9.40625,-9.40625h68.53125v9.40625c0,9.675 7.79375,17.46875 17.46875,17.46875h11.28802c2.28438,0 6.18073,0 6.18073,-4.03125c0,-8.19688 -3.22395,-15.99167 -9.00208,-21.90417c-5.9125,-5.77813 -13.7073,-9.00208 -21.90417,-9.00208zM119.59375,16.52917c4.56875,0.80625 8.73438,2.9552 12.09375,6.31458c3.35938,3.35938 5.50833,7.525 6.31458,12.09375h-9.00208c-5.24063,0 -9.40625,-4.16563 -9.40625,-9.40625zM142.4375,53.75c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v34.9375c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-34.9375c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM142.50574,110.20325c-6.88672,-0.0168 -13.77396,2.60509 -19.01459,7.9129c-10.48125,10.48125 -10.48125,27.5453 0,38.02655c10.48125,10.48125 27.5453,10.48125 38.02655,0c10.48125,-10.48125 10.48125,-27.5453 0,-38.02655c-5.24062,-5.24063 -12.12525,-7.89611 -19.01197,-7.9129zM142.4375,119.59375c0.5375,0 1.07448,0.13333 1.4776,0.2677c0.5375,0.26875 0.94063,0.53907 1.34375,0.9422l10.75,10.75c1.6125,1.6125 1.6125,4.16458 0,5.6427c-1.6125,1.6125 -4.16458,1.6125 -5.6427,0l-3.8974,-3.8974v17.20105c0,2.28438 -1.74687,4.03125 -4.03125,4.03125c-2.28438,0 -4.03125,-1.74687 -4.03125,-4.03125v-17.20105l-3.8974,3.8974c-1.6125,1.6125 -4.16458,1.6125 -5.6427,0c-1.6125,-1.6125 -1.6125,-4.16458 0,-5.6427l10.75,-10.75c0.80625,-0.80625 1.74635,-1.2099 2.82135,-1.2099z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
                 </label>
                 <br />
                 <p id="fileInformation"></p>
-                <br /> 
+                <br />
                 <input type="submit" value="submit" id="submit" class="inputButton" />
-                
+
             </form>
         </div>
         <p id="formInformation"></p>
         <p id="files"></p>
     </div>
-   
-    <!-- Learning how to post data to the backend--> 
-   
-</body > 
-<script async defer >
-     function readTheFile(){
-         //grab element where I upload my files ->
-         let file = document.querySelector("#fileUpload");
-          //id = fileUpload
-         // create an element with an empty string
-         let infoAboutFile = "";
-         //loop through the fileupload element
-         console.log("File",file.files);
 
-         let allMyFiles = file.files;
-         let objectEntries = Object.entries(allMyFiles);
-         console.log(objectEntries.length)
+    <!-- Learning how to post data to the backend-->
+
+</body>
+<script async defer>
+    function readTheFile() {
+        //grab element where I upload my files ->
+        let file = document.querySelector("#fileUpload");
+        //id = fileUpload
+        // create an element with an empty string
+        let infoAboutFile = "";
+        //loop through the fileupload element
+        console.log("File", file.files);
+
+        let allMyFiles = file.files;
+        let objectEntries = Object.entries(allMyFiles);
+        console.log(objectEntries.length)
 
         //  document.getElementById("submit").addEventListener("click",function(){
         //  document.getElementById("formInformation").innerHTML = "file"})
         //  if ("files" in allMyFiles){
         //      console.log(allMyFiles["files"]);
-        
+
         //  }
-        
-         //if there is more than one file
-         //append to the string information about each of those files
-         // for(let i = 0;i < files.length;i++){
-            //let name = files[i].name
-            //let size = files[i].size
-            // append that information to the string
-            //grab the name of each of those files
-         //}
-         //otherwise
-         //let name = file.name
-         //let size = file.size
-         //append name and size to the string infoAboutFile
-     }
+
+        //if there is more than one file
+        //append to the string information about each of those files
+        // for(let i = 0;i < files.length;i++){
+        //let name = files[i].name
+        //let size = files[i].size
+        // append that information to the string
+        //grab the name of each of those files
+        //}
+        //otherwise
+        //let name = file.name
+        //let size = file.size
+        //append name and size to the string infoAboutFile
+    }
 </script>
+
 </html>
