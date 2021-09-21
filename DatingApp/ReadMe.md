@@ -1,6 +1,6 @@
 # DatingApp
 
-![GitHub Logo](mp4/dating_app.mp4)
+<!-- ![GitHub Logo](mp4/dating_app.mp4) -->
 
 ### About Project
 
