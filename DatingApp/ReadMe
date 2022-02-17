@@ -1,3 +1,10 @@
+FacebookAppId=496904885063928
+FacebookAppSecret=660ea24baa37756d821a098ed53d3a3e
+
+FacebookAppId=549444626113121
+FacebookAppSecret=c53497ef33418f2104d9bd6e15df980d
+
+
 npm rebuild bcrypt --build-from-source
 https://github.com/kelektiv/node.bcrypt.js/issues/635
 
